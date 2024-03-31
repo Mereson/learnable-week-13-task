@@ -10,7 +10,9 @@ function App() {
   const apiKey = process.env.REACT_APP_API_KEY
 
   useEffect(() => {
-    fetch(apiKey).then((response) => {
+    fetch(
+      "https://emoji-api.com/emojis?access_key=4aa702d882d9a853f51febf4dd7585c6a2dc540c"
+    ).then((response) => {
       const res = response.json()
       res.then((data) => {
         setemojiList(data)
