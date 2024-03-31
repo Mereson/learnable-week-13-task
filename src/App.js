@@ -9,8 +9,6 @@ function App() {
 
   const apiKey = process.env.REACT_APP_API_KEY
 
-  
-
   useEffect(() => {
     fetch(apiKey).then((response) => {
       const res = response.json()
